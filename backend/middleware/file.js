@@ -13,7 +13,7 @@ const MIME_TYPE_MAP = {
       if(isValid) {
         error = null;
       }
-      cb(error, "images"); //This path is relative to server.js file    
+      cb(error, "backend/images"); //This path is relative to server.js file    
     },
     filename: (req, file, cb) => {
       const name = file.originalname.toLowerCase().split(' ').join('-');
@@ -21,5 +21,5 @@ const MIME_TYPE_MAP = {
       cb(null, name + '-' + Date.now() + '.' + ext);
     }
   });
-
+console.log("Storage: "+storage);
   module.exports = multer({storage: storage}).single("image");

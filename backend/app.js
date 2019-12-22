@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://admin:"+ process.env.MONGO_ATLAS_PW +"@cluster0-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended:false }));
-app.use("/images", express.static(path.join("images"))); //express.static is used for granting access to /imges folder. Also /images path is mapped to backend/images.
+app.use("/images", express.static(path.join("backend/images"))); //express.static is used for granting access to /imges folder. Also /images path is mapped to backend/images.
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
