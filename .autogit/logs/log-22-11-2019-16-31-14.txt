@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 22 2019 16:31:14 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* backend/app.js
+* backend/middleware/file.js
+* backend/routes/posts.js
+
+
+Created files:
+* .autogit/autogit.json
+* CHANGES.txt
+* backend/images/ggfhv-1563098926138.jpg
+* backend/images/test4-1561366422413.jpg
+* backend/images/test44-1561366514605.jpg
+
+
+Deleted files:
+
+
+Renamed files:
